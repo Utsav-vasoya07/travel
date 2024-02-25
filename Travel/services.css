@@ -1,0 +1,110 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    margin-top: -10px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background: black;
+}
+label.logo
+{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px; 
+    line-height: 80px; 
+         
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display:inline-block ;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    border: 3px solid white; 
+    transition: .2s;
+    color: red;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#packages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.package {
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.08);
+}
+
+.package img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 8px;
+}

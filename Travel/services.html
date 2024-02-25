@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <title>Services</title>
+   <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        function openLightbox(imageSrc) {
+    $("#lightbox img").attr("src", imageSrc);
+    $("#lightbox").fadeIn(1000);
+}
+
+function closeLightbox() {
+    $("#lightbox").fadeOut(1000);
+}
+</script>
+
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <label class="logo">Travel Agency</label>
+            <ul>
+                 <li><a href="main.html">Home</a></li>
+                 <li><a href="about.html"target="_blank">About</a></li>
+                 <li><a href="services.html">Services</a></li>
+                 <li><a href="contact.html"target="_blank">Contact</a></li>  
+                 <li><a href="feedback.html"target="_blank">Feedback</a></li>           
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Discover Our Packages</h1>
+    </header>
+
+    <section id="packages">
+        <div class="package" id="package1" onclick="openLightbox('aedventure pakege.png')">
+            <img src="adventure.jpg" alt="Package 1">
+            <h2>Adventure Package</h2>
+            <p>Embark on an adrenaline-filled journey with our Adventure Package. Explore the wildest places and experience thrilling activities.</p>
+        </div>
+
+        <div class="package" id="package2" onclick="openLightbox('Maldives pakeg.png')">
+            <img src="maldivs.jpg" alt="Package 2">
+            <h2>Relaxation Package</h2>
+            <p>Indulge in luxury and relaxation with our Relaxation Package. Unwind in the most serene and picturesque destinations.</p>
+        </div>
+
+        <div class="package" id="package3" onclick="openLightbox('ladakh pakege.png')">
+            <img src="Ladakh.jpg" alt="Package 3">
+            <h2>Ladakh Package</h2>
+            <p>Ladakh camps and rides is one of the oldest design trip of LBR which is still on top demand by the riders around the world.</p>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img src=" " alt="Lightbox Image">
+    </div>
+
+</body>
+</html>

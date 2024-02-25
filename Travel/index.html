@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css"
+    <title>Login Page</title>
+    <script>
+      function Login_page() {
+        var email = document.getElementById("email").value;
+        var pattern = /^\w+$/;
+        if (pattern.test(email)) {
+          alert("failed");
+          window.open("index.html");
+        } else {
+          alert("Login sucsess");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <center><h1>Login Form</h1></center>
+    <form action="home.html" onsubmit="return Login_page()">
+      <div class="container">
+        <label>Email : </label>
+        <input
+          type="email"
+          placeholder="Enter email"
+          id="email"
+          name="username"
+          required
+        />
+        <label>Password : </label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+          id="pass"
+          minlength="6"
+          maxlength="8"
+        />
+        <button type="submit">Login</button>
+       
+        
+      </div>
+    </form>
+  </body>
+</html>
